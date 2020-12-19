@@ -2,9 +2,9 @@
 
 [Gitee](https://gitee.com/haujet/ytb-vtt-to-srt)　|　[Github](https://github.com/HaujetZhao/ytb-vtt-to-srt) 
 
-## 功能介绍
+## Target
 
-从 YouTube 上下载下来的 vtt 字幕是为双行显示优化过的，如果使用 ffmpeg 等工具，将其转换成 srt 字幕，结果可能是这样：
+Vtt subtitles downloaded from YouTube are optimized for double line display. If you use tools like FFmpeg, converting it into srt subtitles, the result might be like this: 
 
 ```
 1
@@ -35,9 +35,9 @@ of people ask me how I am the way I am
 
 ```
 
-放到字幕软件里，根本无法制作翻译。
+which is not operational in translating the subtitle. 
 
-所以需要将其转换为单行的 srt 字幕。这样的：
+So we need to convert the vtt into perfect single line srt, like this: 
 
 ```
 1
@@ -66,11 +66,11 @@ youngin in high school my dad had some
 
 ```
 
-这个脚本就是这个功能。
+That what this script does. 
 
-## 使用方法
+## Usage
 
-在命令行界面，用 python 执行这个脚本，然后会提示你输入 vtt 文件路径，将 vtt 文件拖入，再回车，就会生成一个转换好的 srt 文件
+In cmd page，run the `.py` script using python, you'll get a hint letting you input the vtt file path, you can just drop the vtt file in, and press `Enter`, bingo! 
 
 ![image-20201220002506326](assets/image-20201220002506326.png) 
 

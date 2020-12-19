@@ -3,14 +3,9 @@ import srt
 import os
 
 
-# 这个脚本的作用是
-# 将油管的双行 vtt 字幕转成 srt 字幕后，再转成单行
-# 因为油管的字幕总是会有重复的 0.1 秒的字幕，将 ffmpeg 转成的 srt 字幕导入到 arctime 里
-# 会在每一行都有重复
-
-
 print('\n\n\n')
-输入文件 = input('请输入 vtt 字幕路径：').strip('"')
+print('Please ')
+输入文件 = input('Input the vtt subtitle file path：').strip('"')
 输出文件 = os.path.splitext(输入文件)[0] + '.srt'
 print('\n\n\n')
 command = f'ffmpeg -y -i "{输入文件}" "{输出文件}"'
@@ -54,4 +49,4 @@ with open(输出文件, 'w', encoding='utf-8') as out:
     out.write(输出文件内容)
 
 print('\n\n\n')
-print('完成')
+print('Finished')
